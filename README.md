@@ -1,3 +1,4 @@
+![image](https://github.com/Mathieu-Soussignan/Dice_Game/assets/40361937/31fd5e78-5caa-4819-9914-a66cb25c9972)
 # Dice Game
 
 ## Introduction
