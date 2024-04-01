@@ -17,3 +17,31 @@ git clone https://github.com/your-username/dice-game.git
 cd dice-game
 npm install
 npm run start
+
+
+Comment jouer
+À l'ouverture du jeu, sélectionnez votre numéro favori entre 1 et 6.
+Cliquez sur le dé à l'écran pour lancer.
+Si le dé affiche votre numéro sélectionné, vous gagnez des points égaux au numéro affiché.
+Si le résultat est différent, 2 points vous sont retirés.
+Continuez à jouer et tentez de battre votre meilleur score!
+Fonctionnalités
+Sélection de numéro: Choisissez votre numéro chanceux avant chaque lancer.
+Lancer de dé aléatoire: Chaque clic simule un lancer de dé réaliste.
+Système de points: Accumulez des points pour chaque prédiction correcte.
+Réinitialisation de score: Commencez une nouvelle partie à tout moment en réinitialisant votre score.
+Règles du jeu intégrées: Cliquez sur "Show Rules" pour une description complète du jeu.
+Technologies
+Ce jeu a été développé avec :
+
+React.js pour la gestion de l'interface utilisateur
+Vite pour un environnement de développement rapide et performant
+CSS pour le style
+Contribution
+Les contributions sont toujours les bienvenues! Si vous souhaitez contribuer, veuillez forker le dépôt et créer une pull request avec vos modifications. N'oubliez pas de donner une description détaillée de vos changements et de pourquoi vous pensez qu'ils seraient utiles.
+
+Licence
+Ce projet est sous licence MIT.
+
+Contact
+Si vous avez des questions ou des suggestions concernant Dice Game, n'hésitez pas à me contacter à mathieu.sousssignan@hotmail.fr
