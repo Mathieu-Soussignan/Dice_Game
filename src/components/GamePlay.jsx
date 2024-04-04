@@ -67,11 +67,13 @@ export default GamePlay;
 
 const MainContainer = styled.main`
   padding-top: 70px;
+
   .top_section {
     display: flex;
     justify-content: space-around;
     align-items: end;
   }
+
   .btns {
     margin-top: 40px;
     gap: 10px;
@@ -79,6 +81,36 @@ const MainContainer = styled.main`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+  }
+
+  /* Media queries pour ajuster le layout sur les petits écrans */
+  @media (max-width: 768px) {
+    padding-top: 50px;
+
+    .top_section {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .btns {
+      margin-top: 20px;
+      gap: 5px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 30px;
+
+    .top_section {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .btns {
+      margin-top: 15px;
+      gap: 5px;
+    }
   }
 `;

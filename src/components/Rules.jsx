@@ -3,15 +3,15 @@ import styled from "styled-components";
 const Rules = () => {
   return (
     <RulesContainer>
-      <h2>How to play dice game</h2>
+      <h2>Comment jouer au jeu de dés</h2>
       <div className="text">
-        <p>Select any number</p>
-        <p>Click on dice image</p>
+        <p>Sélectionner un numéro</p>
+        <p>Cliquez sur l'image du dé</p>
         <p>
-          after click on dice if selected number is equal to dice number you
-          will get same point as dice{" "}
+          Après avoir cliqué sur le dé, si le nombre sélectionné est égal au nombre du dé, vous obtiendrez le même point que le dé.
+          {" "}
         </p>
-        <p>if you get wrong guess then 2 point will be dedcuted </p>
+        <p>Si vous vous trompez, 2 points vous seront retirés. </p>
       </div>
     </RulesContainer>
   );

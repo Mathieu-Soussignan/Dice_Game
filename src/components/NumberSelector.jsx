@@ -40,25 +40,60 @@ const NumberSelectorContainer = styled.div`
 
   .flex {
     display: flex;
-    gap: 24px;
+    gap: 24px; // Peut-être diminuer le gap sur les petits écrans
+
+    p {
+      font-size: 24px; // Adapter la taille de la police pour les petits écrans
+      font-weight: 700; // Le poids de la police est probablement ok
+    }
+
+    .error {
+      color: red;
+      // Assure-toi que le message d'erreur est visible mais pas envahissant sur les petits écrans
+    }
   }
-  p {
-    font-size: 24px;
-    font-weight: 700px;
+
+  @media (max-width: 768px) {
+    .flex {
+      gap: 16px;
+    }
+
+    p {
+      font-size: 18px;
+    }
   }
-  .error {
-    color: red;
+
+  @media (max-width: 480px) {
+    .flex {
+      gap: 8px;
+    }
+
+    p {
+      font-size: 16px;
+    }
   }
 `;
 
 const Box = styled.div`
-  height: 72px;
+  height: 72px; // Adapter la taille pour les petits écrans
   width: 72px;
   border: 1px solid black;
   display: grid;
   place-items: center;
-  font-size: 24px;
+  font-size: 24px; // Réduire pour les petits écrans
   font-weight: 700;
-  background-color: ${(props) => (props.isSelected ? "black" : "white")};
-  color: ${(props) => (!props.isSelected ? "black" : "white")};
+  background-color: ${props => (props.isSelected ? "black" : "white")};
+  color: ${props => (props.isSelected ? "white" : "black")};
+
+  @media (max-width: 768px) {
+    height: 60px; 
+    width: 60px;
+    font-size: 18px;
+  }
+
+  @media (max-width: 480px) {
+    height: 50px;
+    width: 50px;
+    font-size: 16px;
+  }
 `;
